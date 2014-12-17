@@ -10,7 +10,7 @@ class Board
 
 	def initialize(cell, size: size = DEFAULT_SIZE)
 		@table = []
-		(0..size-1).each { |c| @table[c] = Array.new(size) {Cell.new} }
+		(0...size).each { |c| @table[c] = Array.new(size) {Cell.new} }
 	end
 
   def load_ship(ship: ship,location: location)

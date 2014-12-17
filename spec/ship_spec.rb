@@ -2,7 +2,7 @@ require 'ship'
 
 describe 'ship' do 
 
-	let(:ship) {Ship.new(length: 3)}
+	let(:ship) {Ship.new(3)}
 
 	it 'should have a length' do
 
@@ -22,6 +22,13 @@ describe 'ship' do
 		expect(ship).to be_floating
 
 	end
+
+	it 'can introduce battleships' do
+		
+		expect(Ship.battleship.size).to eq(4)
+
+	end
+
 end
 
 
