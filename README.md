@@ -1,4 +1,5 @@
-MA project #2.
+Battleships
+
 The game is called Battleship.
 
 The Game has two players.
